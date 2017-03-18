@@ -83,7 +83,7 @@ public class HashPipe {
     }
 
     public String floor(String key) {
-        Pipe x = floor(root, key, root.pipeHeight);
+        Pipe x = getPipe(key);
         if (x == null) return null;
         return x.key;
     }
